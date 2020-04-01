@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>My First JavaScript</h2>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+
+</body>
+
+
+
+
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="ligaluz()">Turn on the light</button>
+
+<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+
+<button onclick="desligaluz()">Turn off the light</button>
+
+<script>
+    function ligaluz() {
+        document.getElementById('myImage').src = 'https\:\/\/www.w3schools.com\/js\/pic_bulbon.gif'
+
+    }
+    function desligaluz() {
+        document.getElementById('myImage').src = 'https\:\/\/www.w3schools.com\/js\/pic_bulboff.gif'
+    }    
+</script>
+
+</html>
